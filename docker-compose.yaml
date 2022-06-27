@@ -3,16 +3,16 @@ version: "3.9"
 services:
   perl:
     build: .
-    depends_on:
-      - db
+    # depends_on:
+    #   - db
     volumes:
       - .:/app
     ports:
       - "8080:80"
-  db:
-    image: mysql:5.7
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-    volumes:
-      - ./sql/bands.sql:/docker-entrypoint-initdb.d/bands.sql
+  # db:
+  #   image: mysql:5.7
+  #   restart: always
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: root
+  #   volumes:
+  #     - ./sql/bands.sql:/docker-entrypoint-initdb.d/bands.sql

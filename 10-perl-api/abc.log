@@ -1,0 +1,3 @@
+$VAR1 = 'world';
+hash- or arrayref expected (not a simple scalar, use allow_nonref to allow this) at /app/10-perl-api/post.cgi line 49.
+$VAR1 = 'world';

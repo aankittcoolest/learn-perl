@@ -1,0 +1,26 @@
+
+
+POST http://localhost:8080/post.cgi
+Content-Type: "hello"
+Authorization: "12345"
+
+{
+    "firstname": "ankit",
+    "lastname": "agrawal"
+}
+
+###
+
+PUT http://localhost:8080/put.cgi
+Content-Type: "application/json"
+
+{
+    "company_name": "ankit",
+    "company_name_kana": "agrawal",
+    "last_name": "ankit",
+    "first_name": "ankit",
+    "last_name_kana": "",
+    "first_name_kana": "",
+    "telephone": "",
+    "email": ""
+}
